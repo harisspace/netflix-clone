@@ -1,0 +1,57 @@
+.banner {
+    width: 100%;
+    height: 485px;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    background-image: linear-gradient(180deg, transparent, rgba(31, 31, 31, .8), #111);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.banner__content {
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    margin-left: 20px;
+}
+
+.banner__title, .banner__overview {
+    color: rgb(231, 227, 227);
+}
+
+.banner__title {
+    font-size: 3rem;
+}
+
+.banner__overview {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.banner__btn {
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 15px 33px;
+    font-size: 1.1rem;
+    background-color: rgb(228, 16, 16);
+    color: rgb(231, 227, 227);
+    border-radius: .34rem;
+}
+
+.banner__btn:hover {
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    color: rgb(228, 16, 16);
+    transition: all .3s;
+}
+
+.banner__btn, .banner__content, .banner__overview, .banner__title {
+    z-index: 999;
+}
